@@ -10,7 +10,6 @@ if [ -e "/etc/ssh/sshd_config" ];then
             echo "${CWARNING}input error! Input range: 22,1025~65534${CEND}"
         fi
     done
- 
     if [ -z "`grep ^Port /etc/ssh/sshd_config`" -a "$SSH_PORT" != '22' ];then
         sed -i "s@^#Port.*@&\nPort $SSH_PORT@" /etc/ssh/sshd_config
     elif [ -n "`grep ^Port /etc/ssh/sshd_config`" ];then
