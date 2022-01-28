@@ -21,6 +21,8 @@ SSH端口修改脚本
 
 * * *
 
+下面是引用整合的其他资源
+
 # 系统管理员资源大全中文版
 
 我想很多程序员应该记得 GitHub 上有一个 Awesome - XXX 系列的资源整理。[awesome-sysadmin](https://github.com/kahun/awesome-sysadmin) 就是 kahun 发起维护的 系统管理员 资源列表，内容包括：备份/克隆软件、云计算/云存储、协作软件、配置管理、日志管理、监控、项目管理
