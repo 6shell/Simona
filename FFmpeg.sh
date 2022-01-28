@@ -30,7 +30,6 @@ then
     sleep 2
 fi
 	}
-
 stream_start(){
 # 定义推流地址和推流码
 read -p "输入你的推流地址和推流码(rtmp协议):" rtmp
