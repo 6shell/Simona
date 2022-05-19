@@ -1,0 +1,19 @@
+version: "3"
+services:
+  navidrome:
+    image: deluan/navidrome:latest
+    container_name: navidrome
+    ports:
+      - "4533:4533"
+    environment:
+      ND_ENABLETRANSCODINGCONFIG: true
+      ND_TRANSCODINGCACHESIZE: 100M
+      ND_SCANSCHEDULE: 1m
+      ND_LASTFM_ENABLED:
+      ND_LASTFM_LANGUAGE: zh
+      ND_LOGLEVEL: info
+      ND_SESSIONTIMEOUT: 24h
+      ND_BASEURL: ""
+    volumes:
+      - "/opt/navidrome:/data"
+    restart: unless-stopped
