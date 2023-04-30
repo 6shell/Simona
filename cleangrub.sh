@@ -7,10 +7,10 @@ for i in `dpkg --get-selections|grep linux-image`
 do
 if [ "$i" != "install" ] && [ "$i" != "$CurCore" ]  && [ "$i" != "$CurCoreExtra" ] && [ "$i" != 'linux-image-generic' ];then
 echo "删除无用的内核：$i"
-sudo apt-get remove --purge $i
+apt-get remove --purge $i
 fi
 done
 echo "更新启动菜单"
-sudo update-grub
-sudo apt-get autoremove
-sudo apt-get autoclean
+update-grub
+apt-get autoremove
+apt-get autoclean
