@@ -1,2 +1,1 @@
 默认开启压缩，如需关闭，请修改180行的代码，将“compressImage: true”修改为“compressImage: false”
-限制大小：5M
