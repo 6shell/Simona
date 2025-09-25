@@ -96,7 +96,7 @@ if [[ \$- == *i* ]]; then
         screen -wipe > /dev/null 2>&1
 
         # -R: 尽可能恢复已有的会话。如果不存在，则创建一个新的同名会话。
-        screen -R "\$SESSION_NAME"
+        screen -D -RR "\$SESSION_NAME"
     fi
 fi
 $MARKER_END
